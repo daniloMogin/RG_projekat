@@ -92,7 +92,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
         public void Draw()
         {
             Gl.glBegin(Gl.GL_QUADS);
-
+            // Tacka 2 faza 2: Definisati normale za postolje
             // Zadnja
             Gl.glNormal3f(0.0f, 0.0f, -1.0f);
             Gl.glTexCoord2f(1.0f, 0.0f);

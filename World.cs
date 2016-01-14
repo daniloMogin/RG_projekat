@@ -39,22 +39,25 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
         /// </summary>
         private AssimpScene m_scene;
         private Box postolje;
-
+        // Box variables
         private float boxScaleX = 40.0f;
         private float boxScaleZ = 40.0f;
         private float rotationAngle = 180.0f;
         private float rotationSpeed = 2.0f;
         private float standAngle = 0;
         private float standHeight = 0.0f;
-
-        private double scaleShip = 1.0;
+        // Ship variables
+        private double scaleShip = 8.0;
         private float shipHeight = 0.0f;
         private float m_rotationAngle = 180.0f;
-
         private float m_shipDistance = 0.0f;
         private float m_shipR = 0.0f;
-
+        // Pilar variables
         private float standCarrier = 0.0f;
+        // Moon variables
+        private float moon_rotationAngle = 180f;
+        private float moon_rotationSpeed = 0.1f;
+        private float moon_moonAngle = 0;
 
         /// <summary>
         ///	 Ugao rotacije sveta oko X ose.
@@ -263,13 +266,9 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             Gl.glRotatef(m_xRotation, 1.0f, 0.0f, 0.0f); //odamh za 10
             Gl.glRotatef(m_yRotation, 0.0f, 1.0f, 0.0f);
 
-            //Tacka 6 faza 2: Pozicionirati kameru, tako da se vide deo planete, kao i bočna i gornja strana svemirskog broda.
+            // Tacka 6 faza 2: Pozicionirati kameru, tako da se vide deo planete, kao i bočna i gornja strana svemirskog broda.
             Glu.gluLookAt(-10.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
 
-            //Tacka 2 faza 2: Pozicionirati reflektorski izvor svetlosti ispod planete
-            float[] positionLight1 = { -90.0f, -80.0f, 0.0f, 1.0f };
-            Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_POSITION, positionLight1);
-       
             //Tacka 9 faza 2 Pozicionirati tackasti izvor svetlosti iznad broda
             float[] positionLight0 = { 0.0f, 40.0f, 0.0f, 1.0f };
             Gl.glLightfv(Gl.GL_LIGHT0, Gl.GL_POSITION, positionLight0);
@@ -277,6 +276,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             //planeta
             Gl.glPushMatrix();
             Gl.glTranslatef(0.0f, -80.0f, 0.0f);
+            Gl.glRotatef(moon_rotationAngle, 0.0f, 1.0f, 0.0f);
             Gl.glColor3f(0.4f, 0.4f, 0.4f);
             Glu.gluQuadricNormals(gluObject, Glu.GLU_SMOOTH);
             Glu.gluQuadricTexture(gluObject, Gl.GL_TRUE);
@@ -287,7 +287,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
         
             //nosac postolja
             Gl.glPushMatrix();
-            Gl.glTranslatef(0.0f, -50 + standCarrier, 0.0f);
+            Gl.glTranslatef(0.0f, -50.0f + standCarrier, 0.0f);
             Gl.glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
             Gl.glColor3f(0.4f, 0.4f, 0.4f);
             Glu.gluQuadricNormals(gluObject, Glu.GLU_SMOOTH);
@@ -322,7 +322,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             //brod
             Gl.glPushMatrix();
             Gl.glRotatef(m_rotationAngle, 0.0f, 1.0f, 0.0f);
-            Gl.glTranslatef(m_shipDistance, -4.0f + shipHeight, m_shipR);
+            Gl.glTranslatef(m_shipDistance, 4.0f + shipHeight, m_shipR);
             Gl.glScaled(scaleShip, scaleShip, scaleShip);
             m_scene.Draw();
             Gl.glPopMatrix();
@@ -382,6 +382,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             Gl.glClearColor(0.0f, 0.0f, 0.2f, 1.0f);
             Gl.glEnable(Gl.GL_DEPTH_TEST);
             Gl.glEnable(Gl.GL_CULL_FACE);
+            Gl.glFrontFace(Gl.GL_CCW);
             gluObject = Glu.gluNewQuadric();
 
             // Tacka 1 faza 2: Ukljuciti color tracking mehanizam i podesiti da se pozivom metode glColor
@@ -390,22 +391,19 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             Gl.glColorMaterial(Gl.GL_FRONT, Gl.GL_AMBIENT_AND_DIFFUSE);
 
             Gl.glEnable(Gl.GL_LIGHTING);
-
-            // Tacka 2 faza 2: Definisati reflektorski izvor (cut-off=30) bele boje, pozicionirati ga ispod planete (na negativnom
-            // delu z-ose scene) i usmeriti ga ka planeti. Svetlosni izvor treba da bude stacioniran (tj. transformacije nad modelom
-            // ne uticu na njega). Definisati normale za postolje. Za objekte koji se iscrtavaju pomocu GLU metoda podesiti
-            // automatsko generisanje normala.
+            
+            // Tacka 2 faza 2: Definisati reflektorski izvor (cut-off=30) bele boje
             float[] ambient = { 0.0f, 0.0f, 0.0f, 1.0f };
             float[] diffuse = { 1.0f, 1.0f, 1.0f, 1.0f };
 
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_AMBIENT, ambient);
-            Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_AMBIENT, diffuse);
-            float[] direction = { 0.0f, -1.0f, 0.0f };
+            Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_DIFFUSE, diffuse);
+            float[] direction = { 0.0f, 1.0f, 0.0f };
             Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_SPOT_DIRECTION, direction);
             Gl.glLightf(Gl.GL_LIGHT1, Gl.GL_SPOT_CUTOFF, 30.0f);
 
             Gl.glEnable(Gl.GL_LIGHT1);
-
+            
             // Tacka 9 faza 2: Definisati tackasti svetlosni izvor narandzaste boje
             float[] ambient1 = { 0.0f, 0.0f, 0.0f, 1.0f };
             float[] diffuse1 = { 1.0f, 0.5f, 0.0f, 1.0f };
@@ -416,9 +414,10 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
 
             Gl.glEnable(Gl.GL_LIGHT0);
 
+            // Ukljuci automatsku normalizaciju nad normalama
+            Gl.glEnable(Gl.GL_NORMALIZE);
+
             // Tacka 3 faza 2: Nacin stapanja teksture sa materijalom modulate
-           
-            // 3.nacin stapanja teksture sa materijalom modulate
             Gl.glEnable(Gl.GL_TEXTURE_2D);
             Gl.glTexEnvi(Gl.GL_TEXTURE_ENV, Gl.GL_TEXTURE_ENV_MODE, Gl.GL_MODULATE);
 
@@ -442,11 +441,11 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
                 Gl.glTexParameteri((int)Gl.GL_TEXTURE_2D, (int)Gl.GL_TEXTURE_MIN_FILTER, (int)Gl.GL_LINEAR);		// Linear Filtering
                 Gl.glTexParameteri((int)Gl.GL_TEXTURE_2D, (int)Gl.GL_TEXTURE_MAG_FILTER, (int)Gl.GL_LINEAR);		// Linear Filtering
 
-                //  3. Za teksture podesiti wrapping da bude GL_REPEAT po obema osama
+                // Tacka 3 faza 2: Za teksture podesiti wrapping da bude GL_REPEAT po obema osama
                 Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_WRAP_S, Gl.GL_REPEAT);
                 Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_WRAP_T, Gl.GL_REPEAT);
 
-                // 3. Podesiti filtere za teksture tako da se koristi mipmap linearno filtriranje.
+                // Tacka 3 faza 2: Podesiti filtere za teksture tako da se koristi mipmap linearno filtriranje.
                 Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_MAG_FILTER, Gl.GL_LINEAR_MIPMAP_LINEAR);
                 Gl.glTexParameteri(Gl.GL_TEXTURE_2D, Gl.GL_TEXTURE_MIN_FILTER, Gl.GL_LINEAR_MIPMAP_LINEAR);
 
@@ -462,6 +461,11 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
         /// </summary>
         public void Resize()
         {
+            // Tacka 2 faza 2: Pozicionirati reflektorski izvor svetlosti ispod planete, 
+            // (na negativnom delu z-ose scene) i usmeriti ga ka planeti. Svetlosni izvor treba da bude 
+            // stacioniran (tj. transformacije nad modelom ne uticu na njega).
+            float[] positionLight1 = { 0.0f, -180.0f, 0.0f, 1.0f };
+
             Gl.glViewport(0, 0, m_width, m_height); // kreiraj viewport po celom prozoru
             Gl.glMatrixMode(Gl.GL_PROJECTION);      // selektuj Projection Matrix
             Gl.glLoadIdentity();			        // resetuj Projection Matrix
@@ -470,6 +474,8 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
 
             Gl.glMatrixMode(Gl.GL_MODELVIEW);   // selektuj ModelView Matrix
             Gl.glLoadIdentity();                // resetuj ModelView Matrix
+            
+            Gl.glLightfv(Gl.GL_LIGHT1, Gl.GL_POSITION, positionLight1);
         }
 
         public void RotateStand()
@@ -491,6 +497,19 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             if (m_rotationAngle > 360.0f)
             {
                 m_rotationAngle = 0.0f;
+            }
+        }
+
+        public void RotateMoon()
+        {
+            if (moon_rotationAngle == 360.0f)
+            {
+                moon_rotationAngle = moon_rotationSpeed;
+            }
+            else
+            {
+                moon_rotationAngle -= moon_rotationSpeed;
+                moon_moonAngle -= moon_rotationSpeed;
             }
         }
         

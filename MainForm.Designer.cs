@@ -62,7 +62,7 @@
             this.openglControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.openglControl.Location = new System.Drawing.Point(0, 0);
             this.openglControl.Name = "openglControl";
-            this.openglControl.Size = new System.Drawing.Size(784, 562);
+            this.openglControl.Size = new System.Drawing.Size(784, 561);
             this.openglControl.StencilBits = ((byte)(0));
             this.openglControl.TabIndex = 1;
             this.openglControl.Paint += new System.Windows.Forms.PaintEventHandler(this.OpenGlControlPaint);
@@ -88,7 +88,7 @@
             this.panelControls.Controls.Add(this.labelHeight);
             this.panelControls.Controls.Add(this.labelRotation);
             this.panelControls.Controls.Add(this.labelScaleX);
-            this.panelControls.Location = new System.Drawing.Point(0, 440);
+            this.panelControls.Location = new System.Drawing.Point(0, 439);
             this.panelControls.Name = "panelControls";
             this.panelControls.Size = new System.Drawing.Size(143, 122);
             this.panelControls.TabIndex = 3;
@@ -113,7 +113,6 @@
             0,
             0});
             this.domainUpDownScaleZ.Name = "domainUpDownScaleZ";
-            this.domainUpDownScaleZ.ReadOnly = true;
             this.domainUpDownScaleZ.Size = new System.Drawing.Size(52, 20);
             this.domainUpDownScaleZ.TabIndex = 4;
             this.domainUpDownScaleZ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -153,7 +152,6 @@
             0,
             0});
             this.domainUpDownScaleX.Name = "domainUpDownScaleX";
-            this.domainUpDownScaleX.ReadOnly = true;
             this.domainUpDownScaleX.Size = new System.Drawing.Size(52, 20);
             this.domainUpDownScaleX.TabIndex = 3;
             this.domainUpDownScaleX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -183,7 +181,6 @@
             0,
             -2147483648});
             this.domainUpDownHeight.Name = "domainUpDownHeight";
-            this.domainUpDownHeight.ReadOnly = true;
             this.domainUpDownHeight.Size = new System.Drawing.Size(52, 20);
             this.domainUpDownHeight.TabIndex = 1;
             this.domainUpDownHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -198,7 +195,6 @@
             0,
             0});
             this.domainUpDownRotation.Name = "domainUpDownRotation";
-            this.domainUpDownRotation.ReadOnly = true;
             this.domainUpDownRotation.Size = new System.Drawing.Size(52, 20);
             this.domainUpDownRotation.TabIndex = 2;
             this.domainUpDownRotation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -240,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.openglControl);
             this.Name = "MainForm";

@@ -44,7 +44,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             // Kreiranje OpenGL sveta
             try
             {
-                m_world = new World(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "3D Models"), "UFO.obj", openglControl.Width, openglControl.Height); // "3D Models\\SpaceShip"), "space-ship.obj"
+                m_world = new World(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "3D Models\\SpaceShip"), "space-ship.obj", openglControl.Width, openglControl.Height); // "3D Models\\SpaceShip"), "space-ship.obj" "3D Models\\"), "UFO.obj"
             }
             catch (Exception e)
             {
@@ -117,6 +117,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
         private void timerRotaion_Tick(object sender, EventArgs e)
         {
             m_world.RotateStand();
+            m_world.RotateMoon();
             openglControl.Refresh();
         }
         private void timerAnimation_Tick(object sender, EventArgs e)
@@ -133,9 +134,6 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
                  domainUpDownRotation.Enabled = true;
                  domainUpDownScaleX.Enabled = true;
                  domainUpDownScaleZ.Enabled = true;
-                 m_world.ShipHeight = 0.0f;
-                 m_world.ShipDistance = 0.0f;
-                 m_world.ShipR = 0.0f;
              }
              // Uzletanje
              if (animationDuration > 95)
