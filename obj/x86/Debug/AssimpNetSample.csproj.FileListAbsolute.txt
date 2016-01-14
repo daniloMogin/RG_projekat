@@ -1,0 +1,38 @@
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Duck\duckCM.bmp
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Duck\duck.dae
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Touareg\Touareg.3DS
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\AssimpNetSample.exe
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\AssimpNetSample.pdb
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\AssimpNet.dll
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\Tao.FreeType.dll
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\Tao.OpenGl.dll
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\Tao.Platform.Windows.dll
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\Tao.FreeType.xml
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\Tao.OpenGl.xml
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\Tao.Platform.Windows.xml
+C:\Users\Saska\Desktop\ubicuse\cas03\03\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Saska\Desktop\ubicuse\cas03\03\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.MainForm.resources
+C:\Users\Saska\Desktop\ubicuse\cas03\03\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.Properties.Resources.resources
+C:\Users\Saska\Desktop\ubicuse\cas03\03\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Saska\Desktop\ubicuse\cas03\03\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Saska\Desktop\ubicuse\cas03\03\obj\x86\Debug\AssimpNetSample.exe
+C:\Users\Saska\Desktop\ubicuse\cas03\03\obj\x86\Debug\AssimpNetSample.pdb
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\UFO\UFO.dae
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\UFO\UFO.mtl
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\UFO\UFO.obj
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\UFO\UFO_D.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\UFO\UFO_Light_D.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\UFO\UFO_N.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS.dae
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS.mtl
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS.obj
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_Bulb_D.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_D.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_Glass1_D.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_Glass1_N.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_Glass2_D.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_inside_D.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_N.tga
+C:\Users\Saska\Desktop\ubicuse\cas03\03\bin\Debug\3D Models\Tardis\TARDIS_S.tga
+C:\Users\Saska\Desktop\PF1S7.1\obj\x86\Debug\AssimpNetSample.exe
+C:\Users\Saska\Desktop\PF1S7.1\obj\x86\Debug\AssimpNetSample.pdb

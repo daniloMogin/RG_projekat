@@ -1,0 +1,36 @@
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\obj\x86\Debug\AssimpNetSample.exe
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\obj\x86\Debug\AssimpNetSample.pdb
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\obj\x86\Debug\RG7.4.csprojResolveAssemblyReference.cache
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.MainForm.resources
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.Properties.Resources.resources
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\obj\x86\Debug\RG7.4.csproj.GenerateResource.Cache
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\UFO\UFO.dae
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\UFO\UFO.mtl
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\UFO\UFO.obj
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\UFO\UFO_D.tga
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\UFO\UFO_Light_D.tga
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\UFO\UFO_N.tga
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\AssimpNetSample.exe
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\AssimpNetSample.pdb
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\AssimpNet.dll
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\SpaceShip\space-ship.dae
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\SpaceShip\space-ship.mtl
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.1\bin\Debug\3D Models\SpaceShip\space-ship.obj
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\obj\x86\Debug\AssimpNetSample.exe
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\obj\x86\Debug\AssimpNetSample.pdb
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\SpaceShip\space-ship.dae
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\SpaceShip\space-ship.mtl
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\SpaceShip\space-ship.obj
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\UFO\UFO.dae
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\UFO\UFO.mtl
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\UFO\UFO.obj
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\UFO\UFO_D.tga
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\UFO\UFO_Light_D.tga
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\3D Models\UFO\UFO_N.tga
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\AssimpNetSample.exe
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\AssimpNetSample.pdb
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\bin\Debug\AssimpNet.dll
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\obj\x86\Debug\RG7.4.csprojResolveAssemblyReference.cache
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.MainForm.resources
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\obj\x86\Debug\RacunarskaGrafika.Vezbe.AssimpNetSample.Properties.Resources.resources
+D:\Fakultet\Jimmy\FTN\4_Cetvrta\4_RG\PF1S7.4\obj\x86\Debug\RG7.4.csproj.GenerateResource.Cache
