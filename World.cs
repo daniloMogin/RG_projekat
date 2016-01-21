@@ -464,7 +464,7 @@ namespace RacunarskaGrafika.Vezbe.AssimpNetSample
             // Tacka 2 faza 2: Pozicionirati reflektorski izvor svetlosti ispod planete, 
             // (na negativnom delu z-ose scene) i usmeriti ga ka planeti. Svetlosni izvor treba da bude 
             // stacioniran (tj. transformacije nad modelom ne uticu na njega).
-            float[] positionLight1 = { 0.0f, -180.0f, 0.0f, 1.0f };
+            float[] positionLight1 = { 0.0f, -280.0f, 0.0f, 1.0f };
 
             Gl.glViewport(0, 0, m_width, m_height); // kreiraj viewport po celom prozoru
             Gl.glMatrixMode(Gl.GL_PROJECTION);      // selektuj Projection Matrix

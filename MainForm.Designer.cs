@@ -102,11 +102,6 @@
             0,
             65536});
             this.domainUpDownScaleZ.Location = new System.Drawing.Point(75, 90);
-            this.domainUpDownScaleZ.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
             this.domainUpDownScaleZ.Minimum = new decimal(new int[] {
             11,
             0,
@@ -141,11 +136,6 @@
             0,
             65536});
             this.domainUpDownScaleX.Location = new System.Drawing.Point(75, 64);
-            this.domainUpDownScaleX.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
             this.domainUpDownScaleX.Minimum = new decimal(new int[] {
             11,
             0,
